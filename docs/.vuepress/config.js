@@ -9,10 +9,19 @@ module.exports = {
   ],
   // 设置侧边栏
   themeConfig: {
+    // 设置nav(右上角导航)
+    nav: [
+      { text: '首页', link: '/' },
+      { 
+          text: 'Ugmr的博客', 
+          items: [
+              { text: 'Github', link: 'https://github.com/ugmr' },
+              { text: '掘金', link: 'https://juejin.cn' }
+          ]
+      }
+    ],
   },
-  // 设置nav(右上角导航)
-  nav: {
-
-  },
-  base: "/docs",
+  
+  base: "/docs/",
+  dest: "dist"
 }
